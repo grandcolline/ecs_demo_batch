@@ -10,7 +10,6 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"strconv"
 	"strings"
 )
 
@@ -44,7 +43,7 @@ func main() {
 
 	// slack投げる
 	url := os.Getenv("WEBHOOK_URL")
-	name := "ECS_DEMO_BATCH"
+	name := os.Getenv("NAME")
 	text := "instanceId: " + instanceId + "\ntask: " + task + "\ncontainerId: " + containerId
 	channel := os.Getenv("CHANNEL")
 	jsonStr := `{"channel":"` + channel + `","username":"` + name + `","text":"` + text + `"}`
