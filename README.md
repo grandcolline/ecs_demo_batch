@@ -1,5 +1,7 @@
 # ecs_demo_batch
 
+ECSの勉強会で使う簡単なアプリケーション(BATCH)
+
 ## Docker Image
 
 [grandcolline/ecs_demo_batch](https://hub.docker.com/r/grandcolline/ecs_demo_batch/)
